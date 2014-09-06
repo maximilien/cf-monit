@@ -9,12 +9,16 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
                             
-    @IBOutlet var appName : UILabel
-    @IBOutlet var appStatus : UILabel
-    @IBOutlet var appStatusTimestamp : UILabel
+    @IBOutlet var appName : UILabel!
+    @IBOutlet var appStatus : UILabel!
+    @IBOutlet var appStatusTimestamp : UILabel!
     
-    @IBOutlet var refreshButton : UIButton
+    @IBOutlet var refreshButton : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +27,7 @@ class FirstViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
 
